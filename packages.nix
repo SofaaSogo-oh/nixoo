@@ -6,7 +6,7 @@ let
       latex-bin latexmk titlesec minted multirow cleveref
       mathtools babel-russian hyphenat
     ;})
-    python39Packages.pygments
+    python312Packages.pygments
   ];
   spkgs = with pkgs; [
     btop
@@ -20,6 +20,7 @@ let
     lazygit
     gh
     nixvim.packages.${pkgs.system}.default
+    python312
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
