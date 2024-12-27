@@ -2,9 +2,10 @@
 let 
   tex = with pkgs; [
     (pkgs.texlive.combine { 
-      inherit (pkgs.texlive) scheme-basic
-      latex-bin latexmk titlesec minted multirow cleveref
-      mathtools babel-russian hyphenat
+      inherit (pkgs.texlive) scheme-medium
+      xetex latex-bin latexmk titlesec minted multirow cleveref
+      mathtools babel-russian hyphenat 
+      fontspec xltxtra realscripts xecyr upquote
     ;})
     python312Packages.pygments
   ];
@@ -21,10 +22,13 @@ let
     gh
     nixvim.packages.${pkgs.system}.default
     python312
+    fontconfig
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
     nerd-fonts._3270
+    corefonts liberation_ttf
+    font-manager
   ];
 in
 {
