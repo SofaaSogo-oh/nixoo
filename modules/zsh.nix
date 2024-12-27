@@ -17,5 +17,11 @@
       plugins = ["git" "vi-mode" "thefuck"];
       theme="agnoster";
     };
+    initExtra = ''
+        if [ -z "$TMUX" ]; then
+          tmux new-session -d -s "default"
+          tmux attach -t "default"
+        fi
+    '';
   };
 }
