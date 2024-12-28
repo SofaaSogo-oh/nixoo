@@ -23,6 +23,8 @@ let
     nixvim.packages.${pkgs.system}.default
     python312
     fontconfig
+    zathura
+    ripgrep
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
