@@ -25,6 +25,10 @@ let
     fontconfig
     zathura
     ripgrep
+
+    sbcl
+    clang
+    cmake
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
