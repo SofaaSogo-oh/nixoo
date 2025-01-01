@@ -29,6 +29,7 @@ let
     sbcl
     clang
     cmake
+    asdf
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
