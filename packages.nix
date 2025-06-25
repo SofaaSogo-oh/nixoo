@@ -12,10 +12,10 @@ let
   spkgs = with pkgs; [
     btop
     fastfetch
-    vscode
+    # vscode
     nixgl.nixGLIntel
-    (nixGLWrap krita)
-    octaveFull
+    # (nixGLWrap krita)
+    # octaveFull
     nix-search-cli
     git
     lazygit

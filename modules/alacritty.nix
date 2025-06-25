@@ -1,7 +1,7 @@
 {pkgs, config, nixGLWrap, ...}: 
 {
   programs.alacritty = {
-    enable = true;
+    enable = false;
     package = nixGLWrap pkgs.alacritty;
     settings = {
       # window.opacity = 0.7;
