@@ -13,7 +13,7 @@ let
     btop
     fastfetch
     # vscode
-    nixgl.nixGLIntel
+    # nixgl.nixGLIntel
     # (nixGLWrap krita)
     # octaveFull
     nix-search-cli

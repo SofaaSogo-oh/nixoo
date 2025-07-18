@@ -1,7 +1,7 @@
 {
   imports = [
     ./zsh.nix
-    ./alacritty.nix
+    # ./alacritty.nix
     ./git.nix
     ./tmux.nix
   ];

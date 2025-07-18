@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixgl.url = "github:nix-community/nixGL";
+    # nixgl.url = "github:nix-community/nixGL";
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     unstable-nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -10,7 +10,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = {nixgl, nixpkgs, home-manager, flake-utils, unstable-nixpkgs, ...} @ inputs: 
+  # outputs = {nixgl, nixpkgs, home-manager, flake-utils, unstable-nixpkgs, ...} @ inputs: 
+  outputs = {nixpkgs, home-manager, flake-utils, unstable-nixpkgs, ...} @ inputs: 
   let
     homeStateVersion = "24.11";
     user = "sogo";
@@ -18,14 +19,14 @@
     pkgs = import nixpkgs {
       system = system;
       config.allowUnfree = true;
-      overlays = [ nixgl.overlay ];
+      # overlays = [ nixgl.overlay ];
     };
     unstable-pkgs = import unstable-nixpkgs {
       system = system;
       config.allowUnfree = true;
-      overlays = [ nixgl.overlay ];
+      # overlays = [ nixgl.overlay ];
     };
-    nixGLWrap = import ./nixgl.nix pkgs;
+    # nixGLWrap = import ./nixgl.nix pkgs;
   in {
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = pkgs;
@@ -47,7 +48,7 @@
         }
       ];
       extraSpecialArgs = {
-        inherit nixGLWrap;
+        # inherit nixGLWrap;
         inherit unstable-pkgs;
         inherit (inputs) nixvim;
       };
