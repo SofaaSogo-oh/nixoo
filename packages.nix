@@ -30,6 +30,8 @@ let
     clang
     cmake
     asdf
+
+    ghc
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
