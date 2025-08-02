@@ -32,6 +32,7 @@ let
     asdf
 
     ghc
+    haskellPackages.hoogle
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
