@@ -32,8 +32,12 @@ let
     asdf
 
     ghc
+    haskell-language-server
     haskellPackages.hoogle
     haskellPackages.fast-tags
+    haskellPackages.haskell-debug-adapter
+    haskellPackages.ghci-dap
+    haskellPackages.boxes
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
