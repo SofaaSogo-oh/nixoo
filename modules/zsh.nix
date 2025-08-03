@@ -17,7 +17,7 @@
       plugins = ["git" "vi-mode" "thefuck"];
       theme="agnoster";
     };
-    initExtra = ''
+    initContent = ''
         if [ -z "$TMUX" ]; then
           tmux new-session -d -s "default"
           tmux attach -t "default"

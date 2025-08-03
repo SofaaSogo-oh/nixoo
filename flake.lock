@@ -214,11 +214,11 @@
         "nixvim": "nixvim_2"
       },
       "locked": {
-        "lastModified": 1754218893,
-        "narHash": "sha256-sQNhFuUuN3NrIA+4ExbdZxEY5HAk3Dj8U91AFDWROhw=",
+        "lastModified": 1754234813,
+        "narHash": "sha256-1xJj7tY0+Prz0WPVHIyC9mdMXC8B7E1c4GSRpbtxH/4=",
         "owner": "SofaaSogo-oh",
         "repo": "nimoo",
-        "rev": "f21a2f91b83b27aa907bf7cc3973195d7d056b75",
+        "rev": "2f9d7bcc7af2a56122c4f040cda0dfda0fec9d7f",
         "type": "github"
       },
       "original": {
