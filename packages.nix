@@ -33,6 +33,7 @@ let
 
     ghc
     haskellPackages.hoogle
+    haskellPackages.fast-tags
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
