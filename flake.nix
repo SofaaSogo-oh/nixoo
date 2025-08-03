@@ -2,18 +2,18 @@
   inputs = {
     # nixgl.url = "github:nix-community/nixGL";
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     unstable-nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:SofaaSogo-oh/nimoo";
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
   # outputs = {nixgl, nixpkgs, home-manager, flake-utils, unstable-nixpkgs, ...} @ inputs: 
   outputs = {nixpkgs, home-manager, flake-utils, unstable-nixpkgs, ...} @ inputs: 
   let
-    homeStateVersion = "24.11";
+    homeStateVersion = "25.05";
     user = "sogo";
     system = "x86_64-linux";
     pkgs = import nixpkgs {
