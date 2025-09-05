@@ -39,15 +39,15 @@ let
     font-manager
 
     # ghc
-    haskell.compiler.ghc9101
-    cabal-install
-    haskell-language-server
-    stack
-    haskellPackages.hoogle
-    haskellPackages.fast-tags
-    haskellPackages.haskell-debug-adapter
-    haskellPackages.ghci-dap
-    haskellPackages.ghcide
+    # haskell.compiler.ghc9101
+    # cabal-install
+    # haskell-language-server
+    # stack
+    # haskellPackages.hoogle
+    # haskellPackages.fast-tags
+    # haskellPackages.haskell-debug-adapter
+    # haskellPackages.ghci-dap
+    # haskellPackages.ghcide
   ];
 in
 {
