@@ -32,12 +32,13 @@ let
     asdf
 
     ghc
+    cabal-install
     haskell-language-server
+    stack
     haskellPackages.hoogle
     haskellPackages.fast-tags
     haskellPackages.haskell-debug-adapter
     haskellPackages.ghci-dap
-    haskellPackages.boxes
   ];
   upkgs = with unstable-pkgs; [
     nerd-fonts.gohufont
