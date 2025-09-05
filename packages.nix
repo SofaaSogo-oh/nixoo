@@ -31,14 +31,7 @@ let
     cmake
     asdf
 
-  ];
-  upkgs = with unstable-pkgs; [
-    nerd-fonts.gohufont
-    nerd-fonts._3270
-    corefonts liberation_ttf
-    font-manager
-
-    ghc
+    haskell.compiler.ghc9101
     cabal-install
     haskell-language-server
     stack
@@ -46,6 +39,14 @@ let
     haskellPackages.fast-tags
     haskellPackages.haskell-debug-adapter
     haskellPackages.ghci-dap
+  ];
+  upkgs = with unstable-pkgs; [
+    nerd-fonts.gohufont
+    nerd-fonts._3270
+    corefonts liberation_ttf
+    font-manager
+
+    # ghc
   ];
 in
 {
